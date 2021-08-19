@@ -6,4 +6,4 @@ A mod to correct some small issues with Solasta spells
 2. Execute Unity Mod Manager, Select Solasta, and Install
 3. Download and Install Solasta Mod API
 (https://www.nexusmods.com/solastacrownofthemagister/mods/48?tab=files)
-3. Select Mods tab om Unity Mod Manager, drag and drop Solasta od API and this Mod into "Drop Zip files here" section
+3. Select Mods tab on Unity Mod Manager, drag and drop Solasta od API and this Mod into "Drop Zip files here" section
