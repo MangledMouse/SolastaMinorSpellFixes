@@ -39,7 +39,8 @@ namespace MinorSpellFixes
 
         internal static void ModEntryPoint()
         {
-            ClassSpellListFixes.Load(); 
+            ClassSpellListFixes.Load();
+            IndividualSpellFixes.Load();
         }
 
     }

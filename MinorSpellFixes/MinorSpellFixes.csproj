@@ -53,6 +53,9 @@
 		<Reference Include="SolastaModApi">
 		  <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Slasta_COTM\Mods\SolastaModApi\SolastaModApi.dll</HintPath>
 		</Reference>
+		<Reference Include="SolastaModHelpers">
+		  <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Slasta_COTM\Mods\SolastaModHelpers\SolastaModHelpers.dll</HintPath>
+		</Reference>
 		<Reference Include="UnityEngine">
 			<HintPath>$([System.IO.Path]::Combine($(SolastaInstallDir), 'Solasta_Data\Managed\UnityEngine.dll'))</HintPath>
 			<Private>false</Private>
