@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+obj/
+bin/
+.idea/
+/MinorSpellFixes/MinorSpellFixes.csproj.user
