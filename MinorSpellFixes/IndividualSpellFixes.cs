@@ -11,6 +11,25 @@ namespace MinorSpellFixes
         internal static void Load()
         {
             FixCharmPerson();
+            FixBlackTentacles();
+        }
+
+        //Tabeltop Adventures implemenation of Blacktentacles deviates from the tabletop in the following ways:
+        //It uses a strength Save instead of Dex
+        //It uses a DC check to break out instead of spell save dc
+        //It uses Athletics or Acrobatics check instead of straight Str/Dex
+        //Easy enough to fix the save issue (done)
+        
+        //The Action granted to players is called Break Free and it lets them use their action to make a Athletics or Acrobatics save to end the restrained condition.
+        //I can't seem to find where the breakFreeModes get defined, where the DC gets defined or where what goes into the breakFreeModes is defined
+        //The BreakFreeModes each have text associated with them that I'd like to change as well but that is a lower priority issue to fix
+        private static void FixBlackTentacles()
+        {
+            SpellDefinition blackTentacles = SolastaModApi.DatabaseHelper.SpellDefinitions.BlackTentacles;
+            blackTentacles.EffectDescription.SavingThrowAbility = "Dexterity";
+            //FeatureDefinitionActionAffinity actionAffinityBlackTentacles = SolastaModApi.DatabaseHelper.FeatureDefinitionActionAffinitys.ActionAffinityBlackTentacles;
+            //ActionDefinition breakFree = SolastaModApi.DatabaseHelper.ActionDefinitions.BreakFree;
+            //var x = 2;
         }
 
         private static void FixCharmPerson()
